@@ -1,7 +1,13 @@
 .order {
     background-color: #dbc349;
     color: white;
+    border: none;
+    text-transform: uppercase;
+    padding: 15px;
+    border-radius: 10px;
 }
+
+
 
 nav {
     background-color: #dbc349;
@@ -28,6 +34,8 @@ li {
 ul {
     display: flex;
     justify-content: space-evenly;
+    margin: 0;
+    padding: 10px;
 }
 
 .logo {
@@ -46,6 +54,7 @@ ul {
 .mood {
     display: flex;
     justify-content: space-between;
+    background-color: #D1DCDA;
 }
 
 .flavours {
@@ -54,6 +63,22 @@ ul {
 }
 
 .flavourlabels {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footerstory {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.circle {
+    border-radius: 50%;
+    width: 25%;
+}
+
+.flavourpics {
     display: flex;
     justify-content: space-evenly;
 }
