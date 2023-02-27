@@ -26,6 +26,7 @@
             <li>Products</li>
             <li>About</li>
             <li>Order</li>
+            <input type="text" placeholder="Search">
         </ul>
     </nav>
     <!-- establishes main content structure -->
@@ -34,32 +35,36 @@
         <div class="green">
             <h2>a flavour for every mood</h2>
         </div>
-        <h3>How am I feeling</h3>
+        <div class="feeling">
+            <h3>How am I feeling</h3>
+        </div>
         <div>
-            <!-- mood 1 -->
-            <div>
-                <img>
-                <h4>sad</h4>
-            </div>
-            <!-- mood 2 -->
-            <div>
-                <img>
-                <h4>nostalgic</h4>
-            </div>
-            <!-- mood 3 -->
-            <div>
-                <img>
-                <h4>happy</h4>
-            </div>
-            <!-- mood 4 -->
-            <div>
-                <img>
-                <h4>angry</h4>
-            </div>
-            <!-- mood 5 -->
-            <div>
-                <img>
-                <h4>in love</h4>
+            <div class="mood">
+                <!-- mood 1 -->
+                <div>
+                    <img>
+                    <h4>sad</h4>
+                </div>
+                <!-- mood 2 -->
+                <div>
+                    <img>
+                    <h4>nostalgic</h4>
+                </div>
+                <!-- mood 3 -->
+                <div>
+                    <img>
+                    <h4>happy</h4>
+                </div>
+                <!-- mood 4 -->
+                <div>
+                    <img>
+                    <h4>angry</h4>
+                </div>
+                <!-- mood 5 -->
+                <div>
+                    <img>
+                    <h4>in love</h4>
+                </div>
             </div>
             <!-- establishes grid layout -->
             <div>
@@ -84,14 +89,16 @@
                         aut alias molestiae.</p>
             </div>
         </div>
-        <h3>Flavours of the Week</h3>
+        <div class="flavours">
+            <h3>Flavours of the Week</h3>
+        </div>
         <!-- establishes container for beige background -->
         <div>
             <img>
             <img>
             <img>
         </div>
-        <div>
+        <div class="flavourlabels">
             <h4>bacon</h4>
             <h4>espresso</h4>
             <h4>pomegranate</h4>
@@ -99,30 +106,36 @@
     </main>
     <!-- establishes footer structure -->
     <footer>
-        <!-- establishes copyright information -->
-        <p>
-            Lorem ipsum dolor sit amet. Vel saepe
-            assumenda est fugit consectetur et fugit
-            voluptas At commodi ullam. Est quia
-            laborum aut magni galisum ex atque
-            neque et harum nihil sed quasi Quis.
-            Qui fuga aperiam sit laudantium amet
-            eos alias unde aut quibusdam deserunt
-            aut alias molestiae.
-        </p>
-        <p>
-            Lorem ipsum dolor sit amet. Vel saepe
-            assumenda est fugit consectetur et fugit
-            voluptas At commodi ullam. Est quia
-            laborum aut magni galisum ex atque
-            neque et harum nihil sed quasi Quis.
-            Qui fuga aperiam sit laudantium amet
-            eos alias unde aut quibusdam deserunt
-            aut alias molestiae.
-        </p>
-        <p>
-            &copy; 2023 Sweet Disposition Bakery
-        </p>
+        <!-- establishes container for footer flex -->
+        <div class="footerwpic">
+            <img src="images/Screenshot 2023-02-26 at 7.22.51 PM.png" class="logo">
+            <!-- establishes copyright information and groups story in footer-->
+            <div class="footerstory">
+                <p>
+                Lorem ipsum dolor sit amet. Vel saepe
+                assumenda est fugit consectetur et fugit
+                voluptas At commodi ullam. Est quia
+                laborum aut magni galisum ex atque
+                neque et harum nihil sed quasi Quis.
+                Qui fuga aperiam sit laudantium amet
+                eos alias unde aut quibusdam deserunt
+                aut alias molestiae.
+                </p>
+                 <p>
+                Lorem ipsum dolor sit amet. Vel saepe
+                assumenda est fugit consectetur et fugit
+                voluptas At commodi ullam. Est quia
+                laborum aut magni galisum ex atque
+                neque et harum nihil sed quasi Quis.
+                Qui fuga aperiam sit laudantium amet
+                eos alias unde aut quibusdam deserunt
+                aut alias molestiae.
+                </p>
+                <p>
+                    &copy; 2023 Sweet Disposition Bakery
+                </p>
+            </div>
+        </div>
     </footer>
     
 </body>
