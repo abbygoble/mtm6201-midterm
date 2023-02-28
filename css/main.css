@@ -1,13 +1,26 @@
+html {
+    font-size: 16px;
+}
+
 .order {
-    background-color: #dbc349;
+    background-color: #DBC349;
     color: white;
     border: none;
     text-transform: uppercase;
     padding: 15px;
     border-radius: 10px;
+    margin: 10px;
+    float: right;
 }
 
+h1 {
+}
 
+header {
+    background-image: url('/images/croissant.jpg');   
+    background-repeat: no-repeat;
+    height: 100%;
+}
 
 nav {
     background-color: #dbc349;
@@ -19,6 +32,7 @@ nav {
     align-content: center;
     background-color: #344739;
     color: white;
+    
 }
 
 footer {
@@ -29,6 +43,8 @@ footer {
 li {
     list-style: none;
     color: white;
+    font-size: 1.5rem;
+    font-weight: 400;
 }
 
 ul {
