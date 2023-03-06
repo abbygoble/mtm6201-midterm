@@ -13,13 +13,17 @@ html {
     float: right;
 }
 
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
 h1 {
 }
 
 header {
     background-image: url('/images/croissant.jpg');   
     background-repeat: no-repeat;
-    height: 100%;
 }
 
 nav {
@@ -32,7 +36,6 @@ nav {
     align-content: center;
     background-color: #344739;
     color: white;
-    
 }
 
 footer {
@@ -97,4 +100,36 @@ ul {
 .flavourpics {
     display: flex;
     justify-content: space-evenly;
+}
+
+.information {
+    display: grid;
+    grid-template-areas: 
+    "baker baker info1 coffee-croissant"
+    "baker baker waffle-cupcake info2";
+}
+
+.baker {
+    grid-area: baker;
+    width: 50%;
+}
+
+.info1 {
+    grid-area: info1;
+    width: 25%;
+}
+
+.info2 {
+    grid-area: info2;
+    width: 25%;
+}
+
+.coffee-croissant {
+    grid-area: coffee-croissant;
+    width: 25%;
+}
+
+.waffle-cupcake {
+    grid-area: waffle-cupcake;
+    width: 25%;
 }
