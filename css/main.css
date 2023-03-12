@@ -157,5 +157,15 @@ ul {
 }
 
 .products {
-    width: 25%;
+    width: 100%;
+}
+
+.ourproducts {
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 95%;
+    margin: auto;
 }
