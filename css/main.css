@@ -19,11 +19,31 @@ html {
 }
 
 h1 {
+    visibility: hidden;
+}
+
+.opacitylogo {
+    display: flex;
+    justify-content: center;
+}
+
+.carousel {
+    width: 15%;
+}
+
+.logo {
+ width: 50%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
 }
 
 header {
     background-image: url('/images/croissant.jpg');   
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 nav {
@@ -57,10 +77,6 @@ ul {
     padding: 10px;
 }
 
-.logo {
-    width: 20%;
-}
-
 .footerwpic {
     display: flex;
 }
@@ -72,6 +88,7 @@ ul {
 
 .mood {
     display: flex;
+    padding: 10px;
     justify-content: space-between;
     background-color: #D1DCDA;
 }
@@ -104,6 +121,7 @@ ul {
 
 .information {
     display: grid;
+    width: 100%;
     grid-template-areas: 
     "baker baker info1 coffee-croissant"
     "baker baker waffle-cupcake info2";
@@ -131,5 +149,13 @@ ul {
 
 .waffle-cupcake {
     grid-area: waffle-cupcake;
+    width: 25%;
+}
+
+.footerlogo {
+    width: 25%;
+}
+
+.products {
     width: 25%;
 }
