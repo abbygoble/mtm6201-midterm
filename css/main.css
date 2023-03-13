@@ -79,6 +79,7 @@ ul {
 
 .footerwpic {
     display: flex;
+    padding: 10px;
 }
 
 .feeling {
@@ -107,6 +108,7 @@ ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 10px;
 }
 
 .circle {
@@ -160,6 +162,9 @@ ul {
     width: 100%;
 }
 
+.style {
+}
+
 .ourproducts {
     display: flex;
     justify-content: center;
@@ -169,3 +174,9 @@ ul {
     width: 95%;
     margin: auto;
 }
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
