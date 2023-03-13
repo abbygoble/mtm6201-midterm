@@ -1,7 +1,68 @@
+/* //////////////////////////////////////////////////////////////////////////////////
+CSS RESET
+/////////////////////////////////////////////////////////////////////////////////// */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+/* //////////////////////////////////////////////////////////////////////////////////
+SITE WIDE
+/////////////////////////////////////////////////////////////////////////////////// */
+/* sets font size for entire site */
 html {
     font-size: 16px;
 }
 
+/* sets style for button in header
+colours, border, uppercase, spacing, alignment */
 .order {
     background-color: #DBC349;
     color: white;
@@ -13,43 +74,41 @@ html {
     float: right;
 }
 
-.container {
-    max-width: 1200px;
-    margin: auto;
-}
-
+/* hides site title in header from site as the logo shows the title */
 h1 {
     visibility: hidden;
 }
 
+/* container for logo image makes content display as flex and centers it in the page */
 .opacitylogo {
     display: flex;
     justify-content: center;
 }
 
-.carousel {
-    width: 15%;
-}
-
+/* sets width of logo image to 50% */
 .logo {
- width: 50%;
-}
+    width: 50%;
+   }
 
-a {
+/* styles nav bar text by eliminating underline and setting colour to white */
+   a {
     text-decoration: none;
     color: white;
 }
 
+/* formats header by adding background image, preventing repetition of image, and setting size to cover full width */
 header {
     background-image: url('/images/croissant.jpg');   
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+/* sets background colour of navigation bar */
 nav {
     background-color: #dbc349;
 }
 
+/* formats section with slogan to center content, set background and text colour */
 .green {
     display: flex;
     justify-content: center;
@@ -58,18 +117,25 @@ nav {
     color: white;
 }
 
+/* formats footer with text and background colour */
 footer {
     background-color: #344739;
     color: white;
 }
 
+/* sets font size and font weight for text in nav and establishes timing of transition for hover state */
 li {
-    list-style: none;
-    color: white;
     font-size: 1.5rem;
     font-weight: 400;
+    transition: transform 1s;
 }
 
+/* establishes transition of increasing scale by 1.5 for nav text */
+li:hover {
+    transform: scale(1.5);
+}
+
+/* sets unordered list of nav bar to flex so content can be spaced evenly, and adds spacing */
 ul {
     display: flex;
     justify-content: space-evenly;
@@ -77,16 +143,47 @@ ul {
     padding: 10px;
 }
 
+/* formats footer section by setting as flex and altering spacing */
 .footerwpic {
     display: flex;
     padding: 10px;
 }
 
+/* sets footer text to flex, with column direction and centered, also adjusts spacing */
+.footerstory {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+
+
+.footerlogo {
+    width: 25%;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////
+INDEX
+/////////////////////////////////////////////////////////////////////////////////// */
+
+/* sets width of container for index content */
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* sets width of images with the class of carousel to 15% */
+.carousel {
+    width: 15%;
+}
+
+/* centers how am i feeling section */
 .feeling {
     display: flex;
     justify-content: center;
 }
 
+/* sets section of moods to flex, adjusts spacing of content, sets background colour */
 .mood {
     display: flex;
     padding: 10px;
@@ -94,22 +191,18 @@ ul {
     background-color: #D1DCDA;
 }
 
+/* sets flavour section to flex and centers content */
 .flavours {
     display: flex;
     justify-content: center;
 }
 
+/* sets flavour display to flex and spaces content evenly */
 .flavourlabels {
     display: flex;
     justify-content: space-evenly;
 }
 
-.footerstory {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 10px;
-}
 
 .circle {
     border-radius: 50%;
@@ -123,6 +216,8 @@ ul {
 
 .information {
     display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     width: 100%;
     grid-template-areas: 
     "baker baker info1 coffee-croissant"
@@ -153,16 +248,20 @@ ul {
     grid-area: waffle-cupcake;
     width: 25%;
 }
+/* SMALL VIEWPORT */
 
-.footerlogo {
-    width: 25%;
-}
+/* MEDIUM VIEWPORT*/
+
+/* LARGE VIEWPORT */
+
+
+
+/* //////////////////////////////////////////////////////////////////////////////////
+PRODUCTS
+/////////////////////////////////////////////////////////////////////////////////// */
 
 .products {
     width: 100%;
-}
-
-.style {
 }
 
 .ourproducts {
@@ -175,8 +274,40 @@ ul {
     margin: auto;
 }
 
+/* SMALL VIEWPORT */
+
+/* MEDIUM VIEWPORT*/
+
+/* LARGE VIEWPORT */
+
+/* //////////////////////////////////////////////////////////////////////////////////
+ABOUT
+/////////////////////////////////////////////////////////////////////////////////// */
+
+
+/* SMALL VIEWPORT */
+
+/* MEDIUM VIEWPORT*/
+
+/* LARGE VIEWPORT */
+
+/* //////////////////////////////////////////////////////////////////////////////////
+ORDER
+/////////////////////////////////////////////////////////////////////////////////// */
+
 form {
     display: flex;
     flex-direction: column;
 }
+
+/* SMALL VIEWPORT */
+
+/* MEDIUM VIEWPORT*/
+
+/* LARGE VIEWPORT */
+
+
+
+
+
 
