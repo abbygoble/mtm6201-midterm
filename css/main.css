@@ -95,8 +95,7 @@ h1 {
     align-items: center;
     background-color:  rgba(223, 195, 167, 0.5);
     width: 65%;
-    padding: 10px;
-    padding-bottom: 10px;
+
 }
 
 /* sets width of logo image to 50% */
@@ -115,6 +114,7 @@ header {
     background-image: url('/images/croissant.jpg');   
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 30px;
 }
 
 /* sets background colour of navigation bar */
@@ -241,7 +241,7 @@ ul {
     align-items: flex-start
 }
 .opacitylogo {
-    width: 15%;
+    width: 30%;
 }
 }
 
@@ -448,6 +448,7 @@ INDEX
     .flavourpics {
         display: flex;
         flex-direction: row;
+        background-color: #AD8C6F;
     }
 
     .circle {
@@ -501,6 +502,8 @@ INDEX
     .flavourpics {
         display: flex;
         flex-direction: row;
+        background-color: #AD8C6F;
+        padding: 40px;
     }
 
     .circle {
@@ -629,8 +632,6 @@ PRODUCTS
 
     }
 }
-
-
 
 /* LARGE VIEWPORT */
 @media screen and (min-width: 1008px) {
