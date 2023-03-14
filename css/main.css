@@ -89,17 +89,24 @@ colours, border, uppercase, spacing, alignment */
 /* hides site title in header from site as the logo shows the title */
 h1 {
     visibility: hidden;
+    background-color: #DFC3A7;
 }
 
 /* container for logo image makes content display as flex and centers it in the page */
 .opacitylogo {
-    display: flex;
+   margin: auto;
+    border-radius: 50%;
     justify-content: center;
+    align-items: center;
+    background-color:  rgba(223, 195, 167, 0.5);
+    width: 65%;
+    padding: 10px;
+    padding-bottom: 10px;
 }
 
 /* sets width of logo image to 50% */
 .logo {
-    width: 50%;
+    width: 100%;
    }
 
 /* styles nav bar text by eliminating underline and setting colour to white */
@@ -128,11 +135,11 @@ nav {
     background-color: #344739;
     color: white;
     padding: 30px;
-    font-size: 4rem;
 }
 
 .style {
     font-family: 'Style Script', cursive;
+    font-size: 3rem;
 }
 
 /* formats footer with text and background colour */
@@ -157,6 +164,7 @@ footer {
 ul {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     margin: 0;
     padding: 10px;
 }
@@ -455,10 +463,7 @@ INDEX
     width: 15%;
 }
 
-/* .indexwrapper {
-    width: 100%;
-    margin: auto;
-} */
+
 } 
 
 
@@ -471,6 +476,9 @@ PRODUCTS
     display: flex;
     justify-content: center;
     background-color: #CEDDDA;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .wrapper {
@@ -482,22 +490,23 @@ PRODUCTS
     width: 100%;
 }
 
-@media screen and (max-width: 640px) {
-
-/* .products {
-    width: 100%;
-    border-radius: 50%;
-}
-
-.ourproducts {
+.title {
     display: flex;
     justify-content: center;
+    padding: 10px;
+    font-size: 1.25rem;
 }
 
-.wrapper {
-    width: 95%;
-    margin: auto;
-} */
+.pies {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 1.25rem;
+    padding: 10px;
+}
+
+@media screen and (max-width: 640px) {
+
 }
 
 /* MEDIUM VIEWPORT*/
@@ -631,4 +640,5 @@ input {
     padding: 15px;
     border-radius: 10px;
     margin: 10px;
+    font-size: 1.25rem;
 }
