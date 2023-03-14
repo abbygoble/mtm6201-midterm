@@ -203,8 +203,7 @@ ul {
     width: 50%;
     margin: auto;
 }
-@media screen and (max-width: 640px) {
-}
+
 
 
 
@@ -218,6 +217,10 @@ ul {
     justify-content: center;
     align-items: center;
 } 
+
+.opacitylogo {
+    width: 30%;
+}
 }
 
 
@@ -237,6 +240,9 @@ ul {
     display: flex;
     align-items: flex-start
 }
+.opacitylogo {
+    width: 15%;
+}
 }
 
 
@@ -244,11 +250,14 @@ ul {
 INDEX
 /////////////////////////////////////////////////////////////////////////////////// */
 
-/* sets width of container for index content */
-/* .container {
-    max-width: 1200px;
-    margin: auto;
-} */
+.container {
+    width: 100%;
+}
+
+.indexwrapper {
+    width: 99%;
+}
+
 
 .fotw {
     padding: 20px;
@@ -279,6 +288,86 @@ INDEX
     flex-direction: column-reverse;
     align-items: center;
     padding-top: 40px;
+}
+
+.overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    opacity: 0;
+    transition: opacity 0.25s;
+
+}
+
+.overlaycircle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
+    color: white;
+    opacity: 0;
+    border-radius: 50%;
+    transition: opacity 0.25s;
+
+}
+
+.overlaycircle:hover {
+    opacity: 1;
+}
+
+.flex {
+    position: relative;
+}
+
+.carousel {
+    display: block;
+}
+
+.overlaytext {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    line-height: 100px;
+    font-family: 'Rozha One', serif;
+}
+
+
+.ab {
+    text-transform: uppercase;
+    font-size: 5rem;
+}
+
+.rm {
+    padding-top: 25px;
+    text-transform: lowercase;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+.woman {
+    position: relative;
+    width: 100%;
+}
+
+.baker {
+    display: block;
+    width: 100%;
 }
 
 .fit {
@@ -316,7 +405,7 @@ INDEX
 /* sets section of moods to flex, adjusts spacing of content, sets background colour */
 .mood {
     display: flex;
-    padding: 10px;
+    justify-content: center;
     flex-direction: column;
     background-color: #D1DCDA;
     width: 100%;
@@ -331,7 +420,7 @@ INDEX
 
 .circle {
     border-radius: 50%;
-    width: 95%;
+    width: 85%;
 }
 
 .flavourlabel {
@@ -483,16 +572,11 @@ INDEX
     /* sets section of moods to flex, adjusts spacing of content, sets background colour */
 .mood {
     display: flex;
+    flex-direction: row;
     padding: 10px;
     justify-content: space-between;
     background-color: #D1DCDA;
 }
-/* sets width of images with the class of carousel to 15% */
-.carousel {
-    width: 15%;
-}
-
-
 } 
 
 
@@ -557,7 +641,7 @@ PRODUCTS
         align-items: center;
     }
     .carousel {
-        width: 85%;
+        width: 100%;
     }
     .flex {
         display: flex;
