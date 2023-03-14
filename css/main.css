@@ -57,11 +57,6 @@ table {
 SITE WIDE
 /////////////////////////////////////////////////////////////////////////////////// */
 
-
-
-
-
-
 /* sets font size for entire site */
 html {
     font-size: 16px;
@@ -150,9 +145,10 @@ footer {
 
 /* sets font size and font weight for text in nav and establishes timing of transition for hover state */
 .nav {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     font-weight: 400;
     transition: transform 1s;
+    font-family: 'Rozha One', serif;
 }
 
 /* establishes transition of increasing scale by 1.5 for nav text */
@@ -173,7 +169,11 @@ ul {
 .footerwpic {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 10px;
+    margin-top: 20px;
+    width: 95%;
 }
 
 /* sets footer text to flex, with column direction and centered, also adjusts spacing */
@@ -181,8 +181,13 @@ ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     padding: 10px;
     line-height: 25px;
+}
+
+.backtotop {
+    padding-left: 30px;
 }
 
 .copy {
@@ -209,10 +214,10 @@ ul {
 .footerwpic {
     display: flex;
     padding: 10px;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
 } 
-.logo {
-    width: 25%;
-}
 }
 
 
@@ -225,8 +230,12 @@ ul {
     flex-direction: row;
     padding: 10px;
 } 
-.logo {
-    width: 25%;
+.footerlogo {
+    width: 15%;
+}
+.hours {
+    display: flex;
+    align-items: flex-start
 }
 }
 
@@ -240,6 +249,16 @@ INDEX
     max-width: 1200px;
     margin: auto;
 } */
+
+.fotw {
+    padding: 20px;
+}
+
+.carousel-label {
+    font-family: 'Rozha One', serif;
+    color: #344739;
+    font-size: 2rem;
+}
 
 .info1 {
     width: 95%;
@@ -323,8 +342,9 @@ INDEX
 }
 
 .label {
-    font-size: 1.5rem;
+    font-size: 2rem;
     padding: 10px;
+    font-family: 'Rozha One', serif;
 }
 
 /* MEDIUM VIEWPORT*/
@@ -356,6 +376,7 @@ INDEX
         flex-direction: column;
         align-items: center;
         justify-content: center;
+
     }
     
     .label {
@@ -415,11 +436,10 @@ INDEX
         padding: 10px;
     }
     .information {
+        margin: auto;
         display: flex;
         flex-direction: row;
         width: 95%;
-        justify-content: center;
-        align-items: center;
     }
 
     .coffee-croissant {
@@ -431,12 +451,17 @@ INDEX
     }
 
     .grandchild {
+        width: 50%;
         display: flex;
         flex-direction: column;
-        width: 50%;
+
     }
 
     .fit {
+        width: 50%;
+    }
+
+    .woman {
         width: 50%;
     }
 
@@ -444,12 +469,16 @@ INDEX
     display: flex;
     flex-direction: row;
     background-color: white;
+    padding: 0;
+    margin: 0;
   }
 
   .info2 {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     background-color: white;
+    padding: 0;
+    margin: 0;
   }
     /* sets section of moods to flex, adjusts spacing of content, sets background colour */
 .mood {
