@@ -56,6 +56,12 @@ table {
 /* //////////////////////////////////////////////////////////////////////////////////
 SITE WIDE
 /////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+
+
+
 /* sets font size for entire site */
 html {
     font-size: 16px;
@@ -179,6 +185,9 @@ ul {
     width: 50%;
     margin: auto;
 }
+@media screen and (max-width: 640px) {
+}
+
 
 
 /* MEDIUM VIEWPORT*/
@@ -188,6 +197,9 @@ ul {
     display: flex;
     padding: 10px;
 } 
+.logo {
+    width: 25%;
+}
 }
 
 
@@ -197,8 +209,12 @@ ul {
    /* formats footer section by setting as flex and altering spacing */
 .footerwpic {
     display: flex;
+    flex-direction: row;
     padding: 10px;
 } 
+.logo {
+    width: 25%;
+}
 }
 
 
@@ -207,11 +223,37 @@ INDEX
 /////////////////////////////////////////////////////////////////////////////////// */
 
 /* sets width of container for index content */
-.container {
+/* .container {
     max-width: 1200px;
     margin: auto;
+} */
+
+.info1 {
+    width: 95%;
+    margin: auto;
+    background-color: #DFC3A7;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding-top: 40px;
+
 }
 
+.info2 {
+    width: 95%;
+    margin: auto;
+    background-color: #DFC3A7;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.fit {
+    width: 85%;
+    padding: 10px;
+    line-height: 20px;
+}
 /* sets width of images with the class of carousel to 95% */
 .carousel {
     width: 95%;
@@ -222,10 +264,12 @@ INDEX
 }
 
 .coffee-croissant {
+    width: 85%;
     max-width: 640px;
 }
 
 .waffle-cupcake {
+    width: 85%;
     max-width: 640px;
 }
 
@@ -268,38 +312,41 @@ INDEX
     display: flex;
     justify-content: space-evenly;
 }
-/* 
-.information {
-    display: flex;
-    width: 100%;
-}
-
-
-.grandchild {
-    width: 50%;
-}
-
-.info1 {
-    width: 25%;
-}
-
-.coffee-croissant {
-    width: 25%;
-} */
-
 
 /* MEDIUM VIEWPORT*/
 @media screen and (min-width: 641px) and (max-width: 1007px) {
-    
+    .information {
+        display: flex;
+        width: 95%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grandchild {
+        display: flex;
+    }
+
 }
-
-
 
 /* LARGE VIEWPORT */
 @media screen and (min-width: 1008px) {
     .information {
         display: flex;
+        flex-direction: row;
         width: 95%;
+        justify-content: center;
+    }
+
+    .coffee-croissant {
+        width: 50%;
+    }
+
+    .waffle-cupcake {
+        width: 50%;
+    }
+
+    .woman {
+        width: 50%;
     }
 
     .grandchild {
@@ -313,20 +360,15 @@ INDEX
 
   .info1 {
     display: flex;
+    flex-direction: row;
+    background-color: white;
   }
 
   .info2 {
     display: flex;
+    flex-direction: row;
+    background-color: white;
   }
-    /* .information {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-        width: 100%;
-        grid-template-areas: 
-        "baker baker info1 coffee-croissant"
-        "baker baker waffle-cupcake info2";
-    } */
     /* sets section of moods to flex, adjusts spacing of content, sets background colour */
 .mood {
     display: flex;
@@ -339,37 +381,17 @@ INDEX
     width: 15%;
 }
 
-/* .baker {
-    grid-area: baker;
-    width: 50%;
-}
-
-.info1 {
-    grid-area: info1;
-    width: 25%;
-}
-
-.info2 {
-    grid-area: info2;
-    width: 25%;
-}
-
-.coffee-croissant {
-    grid-area: coffee-croissant;
-    width: 25%;
-}
-
-.waffle-cupcake {
-    grid-area: waffle-cupcake;
-    width: 25%; */
-/* }
+/* .indexwrapper {
+    width: 100%;
+    margin: auto;
 } */
+} 
 
 
 /* //////////////////////////////////////////////////////////////////////////////////
 PRODUCTS
 /////////////////////////////////////////////////////////////////////////////////// */
-
+@media screen and (max-width: 640px) {
 
 .products {
     width: 100%;
@@ -385,8 +407,8 @@ PRODUCTS
     width: 95%;
     margin: auto;
 }
+}
 
-/* 
 /* MEDIUM VIEWPORT*/
 @media screen and (min-width: 641px) and (max-width: 1007px) {
     
@@ -402,11 +424,29 @@ PRODUCTS
 /* //////////////////////////////////////////////////////////////////////////////////
 ABOUT
 /////////////////////////////////////////////////////////////////////////////////// */
-
-.about {
-    line-height: 200px;
+.aboutwrapper {
+    width: 95%;
+    margin: auto;
 }
 
+h2 {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+p {
+    line-height: 20px;
+    padding: 10px;
+}
+
+@media screen and (max-width: 640px) {
+
+.about {
+    line-height: 20px;
+}
+}
 /* MEDIUM VIEWPORT*/
 @media screen and (min-width: 641px) and (max-width: 1007px) {
     
@@ -423,17 +463,31 @@ ABOUT
 ORDER
 /////////////////////////////////////////////////////////////////////////////////// */
 
+.form {
+    width: 95%;
+    margin: auto;
+}
+
 form {
     display: flex;
     flex-direction: column;
+    line-height: 35px;
+    padding: 10px;
+    font-size: 1.5rem;
 }
 
-/* MEDIUM VIEWPORT*/
-@media screen and (min-width: 641px) and (max-width: 1007px) {
-    
+input {
+    line-height: 35px;
+    border: 1px solid black;
 }
 
-
-
-/* LARGE VIEWPORT */
-/* @media screen and (min-width: 1008px) */
+.submit {
+    width: 75%;
+    padding: 10px;
+    margin: 20px auto;
+    font-size: 1.8rem;
+    border: none;
+    background-color: #DFC3A7;
+    color: white;
+    text-transform: uppercase;
+}

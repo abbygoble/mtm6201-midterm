@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&family=Oswald:wght@200&family=Public+Sans:wght@300&family=Style+Script&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div>
+    <div id="top">
         <!-- establishes heading structure -->
         <header role="banner">
             <!-- button takes client to order page -->
@@ -39,11 +39,30 @@
             <div class="green">
                 <h2 class="style">a flavour for every mood</h2>
             </div>
-            <h2>Where it all began</h2>
-            <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit soluta recusandae itaque natus pariatur inventore officia, quasi cumque dolor voluptatum error aspernatur necessitatibus ullam numquam consequatur eum doloribus illo. Magni?</p>
-            <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit soluta recusandae itaque natus pariatur inventore officia, quasi cumque dolor voluptatum error aspernatur necessitatibus ullam numquam consequatur eum doloribus illo. Magni?</p>
-            <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit soluta recusandae itaque natus pariatur inventore officia, quasi cumque dolor voluptatum error aspernatur necessitatibus ullam numquam consequatur eum doloribus illo. Magni?</p>
-            <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit soluta recusandae itaque natus pariatur inventore officia, quasi cumque dolor voluptatum error aspernatur necessitatibus ullam numquam consequatur eum doloribus illo. Magni?</p>
+            <div class="aboutwrapper">
+                <h2>Where it all began...</h2>
+                <p class="about"> I grew up with a mom who always believed food was the best medecine.  I loved cooking with her, but found my true passion with baking.  When I became a mother, I knew I wanted to share my love for the kitchen with my own children.  I started baking on the side, making birthday cakes for loved ones or delicious desserts for special occassions.  I loved seeing that no matter how someone was feeling, there was always a treat perfectly suited to the situation.</p>
+                <p class="about"> This brought about the idea of Sweet Disposition Bakery, where there's a flavour for every mood.  I officially started the bakery out of my own kitchen a year ago while on maternity leave.  We've since grown to a storefront at 165 Elgin Street, Ottawa, and have expanded to offer over 100 types of baked goods.</p>
+                <p class="about"> We specialize in custom orders, where it will look, taste, and feel exactly how you want it to.  Check out our products to find your next sweet fix!</p>
+                <a href="products.html">Shop Now</a>
+                <h2>Get to Know the Team</h2>
+                <ul itemscope itemtype="https://schema.org/Person">
+                    <li itemprop="name">Rosa Smith</li>
+                    <li itemprop="jobTitle">Head Pastry Chef</li>
+                    <img src="images/woman-preparing-dessert-medium-shot.jpeg">
+                </ul>
+                <ul itemscope itemtype="https://schema.org/Person">
+                    <li itemprop="name">Joshua Smith</li>
+                    <li itemprop="jobTitle">Sous Chef</li>
+                    <img src="images/louis-hansel-v3OlBE6-fhU-unsplash.jpg">
+                </ul>
+                <ul itemscope itemtype="https://schema.org/Person">
+                    <li itemprop="name">Marcus Smith</li>
+                    <li itemprop="jobTitle">Taste Tester Extraordinaire</li>
+                    <img src="images/kid-eating-cupcake.jpg">
+                </ul>
+            </div>
+        
         </main>
 </div>
         <!-- establishes footer structure -->
@@ -75,6 +94,7 @@
                     </p>
                     <p>
                         &copy; 2023 Sweet Disposition Bakery
+                        <a href="#top">Back to top</a>
                     </p>
                 </div>
             </div>
