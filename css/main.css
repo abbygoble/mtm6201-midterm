@@ -142,14 +142,14 @@ footer {
 }
 
 /* sets font size and font weight for text in nav and establishes timing of transition for hover state */
-li {
+.nav {
     font-size: 1.5rem;
     font-weight: 400;
     transition: transform 1s;
 }
 
 /* establishes transition of increasing scale by 1.5 for nav text */
-li:hover {
+.nav:hover {
     transform: scale(1.5);
 }
 
@@ -179,6 +179,11 @@ ul {
 
 .copy {
     padding-top: 25px;
+}
+
+.hours {
+    display: flex;
+    flex-direction: column;
 }
 
 .footerlogo {
@@ -290,31 +295,65 @@ INDEX
     width: 100%;
 }
 
-/* sets flavour section to flex and centers content */
 .flavours {
     display: flex;
     justify-content: center;
+    font-size: 2rem;
+    padding: 10px;
 }
-
-/* sets flavour display to flex and spaces content evenly */
-.flavourlabels {
-    display: flex;
-    justify-content: space-evenly;
-}
-
 
 .circle {
     border-radius: 50%;
-    width: 25%;
+    width: 95%;
 }
 
-.flavourpics {
+.flavourlabel {
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.label {
+    font-size: 1.5rem;
+    padding: 10px;
 }
 
 /* MEDIUM VIEWPORT*/
 @media screen and (min-width: 641px) and (max-width: 1007px) {
+    .flavours {
+        display: flex;
+        justify-content: center;
+        font-size: 2rem;
+        padding: 10px;
+    }
+    
+    .flavourpics {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .circle {
+        border-radius: 50%;
+        width: 75%;
+        transition: transform 1s;
+    }
+
+    .circle:hover {
+        transform: scale(1.25);
+    }
+    
+    .flavourlabel {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .label {
+        font-size: 1.5rem;
+        padding: 10px;
+    }
     .information {
         display: flex;
         width: 95%;
@@ -330,11 +369,49 @@ INDEX
 
 /* LARGE VIEWPORT */
 @media screen and (min-width: 1008px) {
+    .baker {
+        width: 100%;
+    }
+
+    .flavours {
+        display: flex;
+        justify-content: center;
+        font-size: 2rem;
+        padding: 10px;
+    }
+    
+    .flavourpics {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .circle {
+        border-radius: 50%;
+        width: 75%;
+        transition: transform 1s;
+    }
+
+    .circle:hover {
+        transform: scale(1.25);
+    }
+    
+    .flavourlabel {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .label {
+        font-size: 1.5rem;
+        padding: 10px;
+    }
     .information {
         display: flex;
         flex-direction: row;
         width: 95%;
         justify-content: center;
+        align-items: center;
     }
 
     .coffee-croissant {
@@ -345,13 +422,10 @@ INDEX
         width: 50%;
     }
 
-    .woman {
-        width: 50%;
-    }
-
     .grandchild {
         display: flex;
         flex-direction: column;
+        width: 50%;
     }
 
     .fit {
@@ -391,9 +465,26 @@ INDEX
 /* //////////////////////////////////////////////////////////////////////////////////
 PRODUCTS
 /////////////////////////////////////////////////////////////////////////////////// */
-@media screen and (max-width: 640px) {
+
+.section {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    background-color: #CEDDDA;
+}
+
+.wrapper {
+    width: 95%;
+    margin: auto;
+}
 
 .products {
+    width: 100%;
+}
+
+@media screen and (max-width: 640px) {
+
+/* .products {
     width: 100%;
     border-radius: 50%;
 }
@@ -406,24 +497,55 @@ PRODUCTS
 .wrapper {
     width: 95%;
     margin: auto;
-}
+} */
 }
 
 /* MEDIUM VIEWPORT*/
 @media screen and (min-width: 641px) and (max-width: 1007px) {
-    
+    .mood {
+        display: flex;
+
+    }
 }
 
 
 
 /* LARGE VIEWPORT */
 @media screen and (min-width: 1008px) {
-    
+    .mood {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .carousel {
+        width: 85%;
+    }
+    .flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .carousel-label {
+        padding: 10px;
+    }
 }
 
 /* //////////////////////////////////////////////////////////////////////////////////
 ABOUT
 /////////////////////////////////////////////////////////////////////////////////// */
+
+.shop {
+    background-color: #DFC3A7;
+    color: white;
+    border: 1px solid white;
+    text-transform: uppercase;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
 .aboutwrapper {
     width: 95%;
     margin: auto;
@@ -436,9 +558,29 @@ h2 {
     padding: 10px;
 }
 
+.blue {
+    background-color: #CEDDDA;
+    margin: 10px;
+}
+
 p {
     line-height: 20px;
     padding: 10px;
+}
+
+.small {
+    width: 95%;
+}
+
+ul {
+    width: 100%;
+}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 @media screen and (max-width: 640px) {
@@ -482,12 +624,11 @@ input {
 }
 
 .submit {
-    width: 75%;
-    padding: 10px;
-    margin: 20px auto;
-    font-size: 1.8rem;
-    border: none;
     background-color: #DFC3A7;
     color: white;
+    border: 1px solid white;
     text-transform: uppercase;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px;
 }

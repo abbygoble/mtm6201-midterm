@@ -26,10 +26,10 @@
         <!-- establishes website navigation -->
         <nav role="navigation">
             <ul>
-                <li><a href="index.html">home</a></li>
-                <li><a href="products.html">products</a></li>
-                <li><a href="about.html">about</a></li>
-                <li><a href="order.html">order</a></li>
+                <li class="nav"><a href="index.html">home</a></li>
+                <li class="nav"><a href="products.html">products</a></li>
+                <li class="nav"><a href="about.html">about</a></li>
+                <li class="nav"><a href="order.html">order</a></li>
                 <input type="text" placeholder="Search" role="search">
             </ul>
         </nav>
@@ -41,25 +41,27 @@
             </div>
             <div class="aboutwrapper">
                 <h2>Where it all began...</h2>
-                <p class="about"> I grew up with a mom who always believed food was the best medecine.  I loved cooking with her, but found my true passion with baking.  When I became a mother, I knew I wanted to share my love for the kitchen with my own children.  I started baking on the side, making birthday cakes for loved ones or delicious desserts for special occassions.  I loved seeing that no matter how someone was feeling, there was always a treat perfectly suited to the situation.</p>
-                <p class="about"> This brought about the idea of Sweet Disposition Bakery, where there's a flavour for every mood.  I officially started the bakery out of my own kitchen a year ago while on maternity leave.  We've since grown to a storefront at 165 Elgin Street, Ottawa, and have expanded to offer over 100 types of baked goods.</p>
-                <p class="about"> We specialize in custom orders, where it will look, taste, and feel exactly how you want it to.  Check out our products to find your next sweet fix!</p>
-                <a href="products.html">Shop Now</a>
+                <div class="blue">
+                    <p class="about"> I grew up with a mom who always believed food was the best medecine.  I loved cooking with her, but found my true passion with baking.  When I became a mother, I knew I wanted to share my love for the kitchen with my own children.  I started baking on the side, making birthday cakes for loved ones or delicious desserts for special occassions.  I loved seeing that no matter how someone was feeling, there was always a treat perfectly suited to the situation.</p>
+                    <p class="about"> This brought about the idea of Sweet Disposition Bakery, where there's a flavour for every mood.  I officially started the bakery out of my own kitchen a year ago while on maternity leave.  We've since grown to a storefront at 165 Elgin Street, Ottawa, and have expanded to offer over 100 types of baked goods.</p>
+                    <p class="about"> We specialize in custom orders, where it will look, taste, and feel exactly how you want it to.  Check out our products to find your next sweet fix!</p>
+                    <button class="shop"><a href="products.html">Shop Now</a></button>
+                </div>
                 <h2>Get to Know the Team</h2>
-                <ul itemscope itemtype="https://schema.org/Person">
+                <ul itemscope itemtype="https://schema.org/Person" class="team">
                     <li itemprop="name">Rosa Smith</li>
                     <li itemprop="jobTitle">Head Pastry Chef</li>
-                    <img src="images/woman-preparing-dessert-medium-shot.jpeg">
+                    <img src="images/woman-preparing-dessert-medium-shot.jpeg" class="small">
                 </ul>
-                <ul itemscope itemtype="https://schema.org/Person">
+                <ul itemscope itemtype="https://schema.org/Person" class="team">
                     <li itemprop="name">Joshua Smith</li>
                     <li itemprop="jobTitle">Sous Chef</li>
-                    <img src="images/louis-hansel-v3OlBE6-fhU-unsplash.jpg">
+                    <img src="images/louis-hansel-v3OlBE6-fhU-unsplash.jpg" class="small">
                 </ul>
-                <ul itemscope itemtype="https://schema.org/Person">
+                <ul itemscope itemtype="https://schema.org/Person" class="team">
                     <li itemprop="name">Marcus Smith</li>
                     <li itemprop="jobTitle">Taste Tester Extraordinaire</li>
-                    <img src="images/kid-eating-cupcake.jpg">
+                    <img src="images/kid-eating-cupcake.jpg" class="small">
                 </ul>
             </div>
         
@@ -73,25 +75,14 @@
                  <!-- establishes copyright information and groups story in footer-->
                 <div class="footerstory">
                     <p>
-                    Lorem ipsum dolor sit amet. Vel saepe
-                    assumenda est fugit consectetur et fugit
-                    voluptas At commodi ullam. Est quia
-                    laborum aut magni galisum ex atque
-                    neque et harum nihil sed quasi Quis.
-                    Qui fuga aperiam sit laudantium amet
-                    eos alias unde aut quibusdam deserunt
-                    aut alias molestiae.
-                    </p>
-                    <p>
-                    Lorem ipsum dolor sit amet. Vel saepe
-                    assumenda est fugit consectetur et fugit
-                    voluptas At commodi ullam. Est quia
-                    laborum aut magni galisum ex atque
-                    neque et harum nihil sed quasi Quis.
-                    Qui fuga aperiam sit laudantium amet
-                    eos alias unde aut quibusdam deserunt
-                    aut alias molestiae.
-                    </p>
+                        Sweet Disposition Bakery is located at 165 Elgin Street in Downtown Ottawa.  We specialize in custom orders tailored to various moods.  Whether you're throwing a birthday party, going through a divorce, or are just in the mood for something sweet - we have the thing for you!
+                        </p>
+                        <ul class="hours">
+                            <li>Hours of Operation</li>
+                            <li>Monday-Friday 9-5</li>
+                            <li>Saturday 9-3</li>
+                            <li>Sunday 9-12</li>
+                        </ul>
                     <p>
                         &copy; 2023 Sweet Disposition Bakery
                         <a href="#top">Back to top</a>
