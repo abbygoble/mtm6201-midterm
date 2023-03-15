@@ -848,12 +848,13 @@ ul {
 /* //////////////////////////////////////////////////////////////////////////////////
 ORDER
 /////////////////////////////////////////////////////////////////////////////////// */
-
+/* sets width of form container to 95% and centers content */
 .form {
     width: 95%;
     margin: auto;
 }
 
+/* displays form as flex column, adjusts line height and font size, and adds spacing */
 form {
     display: flex;
     flex-direction: column;
@@ -862,11 +863,13 @@ form {
     font-size: 1.5rem;
 }
 
+/* sets line height to 35px and adds black border */
 input {
     line-height: 35px;
     border: 1px solid black;
 }
 
+/* formats submit button with colours, spacing, font size, and text transform */
 .submit {
     background-color: #DFC3A7;
     color: white;
