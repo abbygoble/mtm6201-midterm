@@ -452,6 +452,12 @@ INDEX
 
 /* MEDIUM VIEWPORT*/
 @media screen and (min-width: 641px) and (max-width: 1007px) {
+    .mood {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
     .flavours {
         display: flex;
         justify-content: center;
@@ -638,21 +644,63 @@ PRODUCTS
     padding: 10px;
 }
 
-@media screen and (max-width: 640px) {
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
 
+.on {
+    width: 60%;
+    background-color: #DFC3A7;
+    color: white;
+    border: 1px solid white;
+    text-transform: uppercase;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px;
+    font-size: 1.25rem;
 }
 
 /* MEDIUM VIEWPORT*/
 @media screen and (min-width: 641px) and (max-width: 1007px) {
     .mood {
         display: flex;
-
+    }
+    .cookies {
+        display: flex;
     }
 }
 
 /* LARGE VIEWPORT */
 @media screen and (min-width: 1008px) {
     .mood {
+        display: flex;
+    }
+    .cookies {
+        display: flex;
+    }
+    .piesflex {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .pies {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-color: #DFC3A7;
+        margin: 30px;
+    }
+    .fruit {
+        padding: 20px;
+        font-size: 3rem;
+    }
+
+    /* .mood {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -669,7 +717,7 @@ PRODUCTS
     }
     .carousel-label {
         padding: 10px;
-    }
+    } */
 }
 
 /* //////////////////////////////////////////////////////////////////////////////////
@@ -683,7 +731,16 @@ ABOUT
     text-transform: uppercase;
     padding: 15px;
     border-radius: 10px;
-    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.card {
+    background-color: #AD8C6F;
+    margin: 10px auto;
+    width: 95%;
 }
 
 .aboutwrapper {
@@ -701,6 +758,7 @@ h2 {
 .blue {
     background-color: #CEDDDA;
     margin: 10px;
+    padding-bottom: 20px;
 }
 
 p {
@@ -709,7 +767,11 @@ p {
 }
 
 .small {
-    width: 95%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 85%;
+    padding-top: 30px;
 }
 
 ul {
@@ -721,6 +783,8 @@ ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 @media screen and (max-width: 640px) {
@@ -735,17 +799,22 @@ ul {
     display: flex;
     flex-direction: row;
   }
-  .small {
-    width: 90%;
-    border-radius: 50%;
-  }  
+  .card {
+    margin: 10px;
+  }
 }
 
 
 
 /* LARGE VIEWPORT */
 @media screen and (min-width: 1008px) {
-    
+    .gettoknow {
+    display: flex;
+    flex-direction: row;
+    }
+    .card {
+    margin: 10px;
+    }
 }
 
 /* //////////////////////////////////////////////////////////////////////////////////

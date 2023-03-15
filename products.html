@@ -41,7 +41,7 @@
             <h2 class="ourproducts">Our Products</h2>
             <div class="wrapper">
                 <h3 class="section">Cookies</h3>
-                <div>
+                <div class="cookies">
                     <div>
                         <h4 class="title">Chocolate Chip</h4>
                         <source srcset="images/cookies-320_x_320.jpg, images/cookies-640_x_640.jpg 2x">
@@ -72,7 +72,7 @@
                     </div>
                 </div>
                 <h3 class="section">Cakes</h3>
-                <div>
+                <div class="cookies">
                     <div>
                         <h4 class="title">Death by Chocolate</h4>
                         <source srcset="images/strawberry-shortcake-320_x_320.jpg, images/strawberry-shortcake-640_x_640.jpg 2x">
@@ -85,7 +85,7 @@
                         <source srcset="images/vanilla-320_x_320.jpg, images/vanilla-640_x_640.jpg 2x">
                         <source srcset="images/vanilla-640_x_640.jpg">
                         <source srcset="images/vanilla-960_x_960.jpg">
-                        <img src="images/vanilla.jpg" alt="french vanilla cake" class="products">
+                        <img src="images/vanilla-1024_x_1024.jpg" alt="french vanilla cake" class="products">
                     </div>
                     <div>
                         <h4 class="title">Strawberry Shortcake</h4>
@@ -103,26 +103,28 @@
                     </div>
                 </div>
                 <h3 class="section">Pies</h3>
-                <div>
-                    <source srcset="images/pies-320_x_320.jpg, images/pies-640_x_640.jpg 2x">
-                    <source srcset="images/pies-640_x_640.jpg">
-                    <source srcset="images/pies-960_x_960.jpg">
-                    <img src="images/pies-1024_x_1024.jpg" alt="display of pies" class="products">
+                <div class="piesflex">
                     <div class="pies">
-                        <h4>Strawberry Rhubarb</h4>
-                        <h4>Blueberry</h4>
-                        <h4>Cherry</h4>
-                        <h4>Pumpkin</h4>
+                        <h4 class="fruit">Strawberry Rhubarb</h4>
+                        <h4 class="fruit">Blueberry</h4>
+                        <h4 class="fruit">Cherry</h4>
+                        <h4 class="fruit">Pumpkin</h4>
+                    </div>
+                    <div>
+                        <source srcset="images/pies-320_x_320.jpg, images/pies-640_x_640.jpg 2x">
+                        <source srcset="images/pies-640_x_640.jpg">
+                        <source srcset="images/pies-960_x_960.jpg">
+                        <img src="images/pies-1024_x_1024.jpg" alt="display of pies" class="products">
                     </div>
                 </div>
                 <h3 class="section">Others</h3>
-                <div>
+                <div class="cookies">
                     <div>
                         <h4 class="title">Muffins</h4>
                         <source srcset="images/muffins-320_x_320.jpg, images/muffins-640_x_640.jpg 2x">
                         <source srcset="images/muffins-640_x_640.jpg">
                         <source srcset="images/muffins-960_x_960.jpg">
-                        <img src="images/muffins-1024_x_1024.jpg" alt="muffins" class="products">
+                        <img src="images/muffins-1024_x_1024.jpg" alt="muffins" id="sizing" class="products">
                     </div>
                     <div>
                         <h4 class="title">Scones</h4>
@@ -138,8 +140,10 @@
                         <source srcset="images/loaves-960_x_960.jpg">
                         <img src="images/loaves-1024_x_1024.jpg" alt="loaves of bread" class="products">
                     </div>
-                    <h4 class="title">Custom</h4>
-                    <button class="submit"><a href="order.html">Order Now</a></button>
+                </div>                    
+                <h4 class="title">Custom</h4>
+                <div class="center">
+                    <button class="on"><a href="order.html">Order Now</a></button>
                 </div>
             </div>
         </main>
