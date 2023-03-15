@@ -77,6 +77,7 @@ colours, border, uppercase, spacing, alignment */
     transition: transform 1s;
 }
 
+/*  */
 .order:hover {
     transform: scale(1.25);
 }
@@ -330,10 +331,13 @@ INDEX
 
 .flex {
     position: relative;
+    width: 95%;
+    margin: auto;
+    margin-bottom: 40px;
 }
 
-.carousel {
-    display: block;
+.flex:nth-child(1) {
+    margin-top: 40px;
 }
 
 .overlaytext {
@@ -378,11 +382,11 @@ INDEX
 }
 /* sets width of images with the class of carousel to 95% */
 .carousel {
-    width: 95%;
+    width: 100%;
     max-width: 640px;
     margin: auto;
     border-radius: 50%;
-    max-height: 450px;
+    display: block;
 }
 
 .coffee-croissant {
@@ -580,6 +584,9 @@ INDEX
     padding: 10px;
     justify-content: space-between;
     background-color: #D1DCDA;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-bottom: 30px;
 }
 } 
 
@@ -715,7 +722,14 @@ ul {
 }
 /* MEDIUM VIEWPORT*/
 @media screen and (min-width: 641px) and (max-width: 1007px) {
-    
+  .gettoknow {
+    display: flex;
+    flex-direction: row;
+  }
+  .small {
+    width: 90%;
+    border-radius: 50%;
+  }  
 }
 
 
