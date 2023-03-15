@@ -279,17 +279,21 @@ INDEX
     flex-direction: column-reverse;
     align-items: center;
     padding-top: 40px;
-
+    margin-top: 20px;
+    padding-bottom: 40px;
 }
 
 .info2 {
-    width: 95%;
-    margin: auto;
-    background-color: #DFC3A7;
     display: flex;
+    margin: auto;
     flex-direction: column-reverse;
+    justify-content: center;
     align-items: center;
+    width: 95%;
+    background-color: #DFC3A7;
     padding-top: 40px;
+    margin-top: 20px;
+    padding-bottom: 40px;
 }
 
 .overlay {
@@ -376,9 +380,11 @@ INDEX
 }
 
 .fit {
+    display: flex;
     width: 85%;
-    padding: 10px;
     line-height: 20px;
+    margin: 20px auto;
+    background-color: white;
 }
 /* sets width of images with the class of carousel to 95% */
 .carousel {
@@ -391,12 +397,15 @@ INDEX
 
 .coffee-croissant {
     width: 85%;
-    max-width: 640px;
 }
 
 .waffle-cupcake {
     width: 85%;
-    max-width: 640px;
+}
+
+.wcd {
+    display: flex;
+    justify-content: center;
 }
 
 /* centers how am i feeling section */
