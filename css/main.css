@@ -62,6 +62,15 @@ html {
     font-size: 16px;
 }
 
+/* formats header by adding background image, preventing repetition of image, and setting size to cover full width */
+header {
+    background-image: url('/images/croissant.jpg');   
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px;
+    background-color: #CEDDDA;
+}
+
 /* sets style for button in header
 colours, border, uppercase, spacing, alignment */
 .order {
@@ -77,7 +86,7 @@ colours, border, uppercase, spacing, alignment */
     transition: transform 1s;
 }
 
-/*  */
+/* formats order button to increase in scale by 1.25 when hovered */
 .order:hover {
     transform: scale(1.25);
 }
@@ -96,53 +105,11 @@ h1 {
     align-items: center;
     background-color:  rgba(223, 195, 167, 0.5);
     width: 65%;
-
-}
-
-/* sets width of logo image to 50% */
-.logo {
-    width: 100%;
-   }
-
-/* styles nav bar text by eliminating underline and setting colour to white */
-   a {
-    text-decoration: none;
-    color: white;
-}
-
-/* formats header by adding background image, preventing repetition of image, and setting size to cover full width */
-header {
-    background-image: url('/images/croissant.jpg');   
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 30px;
-    background-color: #CEDDDA;
 }
 
 /* sets background colour of navigation bar */
 nav {
     background-color: #DFC3A7;
-}
-
-/* formats section with slogan to center content, set background and text colour */
-.green {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    background-color: #344739;
-    color: white;
-    padding: 30px;
-}
-
-.style {
-    font-family: 'Style Script', cursive;
-    font-size: 3rem;
-}
-
-/* formats footer with text and background colour */
-footer {
-    background-color: #344739;
-    color: white;
 }
 
 /* sets font size and font weight for text in nav and establishes timing of transition for hover state */
@@ -167,6 +134,39 @@ ul {
     padding: 10px;
 }
 
+/* sets width of logo image to 100% */
+.logo {
+    width: 100%;
+   }
+
+/* styles nav bar text by eliminating underline and setting colour to white */
+   a {
+    text-decoration: none;
+    color: white;
+}
+
+/* formats section with slogan to center content, set background and text colour */
+.green {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: #344739;
+    color: white;
+    padding: 30px;
+}
+
+/* formats text within green section by changing font and sizing up to 3rem */
+.style {
+    font-family: 'Style Script', cursive;
+    font-size: 3rem;
+}
+
+/* formats footer with text and background colour */
+footer {
+    background-color: #344739;
+    color: white;
+}
+
 /* formats footer section by setting as flex and altering spacing */
 .footerwpic {
     display: flex;
@@ -176,6 +176,12 @@ ul {
     padding: 10px;
     margin-top: 20px;
     width: 95%;
+}
+
+/* centers logo in footer and sets width to 50% */
+.footerlogo {
+    width: 50%;
+    margin: auto;
 }
 
 /* sets footer text to flex, with column direction and centered, also adjusts spacing */
@@ -188,63 +194,56 @@ ul {
     line-height: 25px;
 }
 
-.backtotop {
-    padding-left: 30px;
-}
-
+/* adds padding of 25px to top of copyright section */
 .copy {
     padding-top: 25px;
 }
 
+/* sets hours section to flex and displays content as a column */
 .hours {
     display: flex;
     flex-direction: column;
 }
 
-.footerlogo {
-    width: 50%;
-    margin: auto;
+/* adds padding to the left side of back to top link */
+.backtotop {
+    padding-left: 30px;
 }
 
-
-
-
-/* MEDIUM VIEWPORT*/
-@media screen and (min-width: 641px) and (max-width: 1007px) {
-   /* formats footer section by setting as flex and altering spacing */
-.footerwpic {
-    display: flex;
-    padding: 10px;
-    width: 90%;
-    justify-content: center;
-    align-items: center;
-} 
-
-.opacitylogo {
-    width: 30%;
-}
+/* MEDIUM VIEWPORT 641px and beyond */
+@media screen and (min-width: 641px) {
+   /* sets opacity for logo container to 30% */
+   .opacitylogo {
+        width: 30%;
+    }
+    /* formats footer section by setting as flex and altering spacing */
+    .footerwpic {
+        display: flex;
+        padding: 10px;
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+    } 
 }
 
-
-
-/* LARGE VIEWPORT */
+/* LARGE VIEWPORT between 1008 and beyond*/
 @media screen and (min-width: 1008px) {
-   /* formats footer section by setting as flex and altering spacing */
-.footerwpic {
-    display: flex;
-    flex-direction: row;
-    padding: 10px;
-} 
-.footerlogo {
-    width: 15%;
-}
-.hours {
-    display: flex;
-    align-items: flex-start
-}
-.opacitylogo {
-    width: 30%;
-}
+
+   /* formats footer section by setting as flex and adding padding of 10px*/
+    .footerwpic {
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+    }
+     /* changes width of logo in footer to 15% */
+    .footerlogo {
+        width: 15%;
+    }
+    /* changes hours to flex-start to align to the left */
+    .hours {
+        display: flex;
+        align-items: flex-start
+    }
 }
 
 
@@ -252,66 +251,56 @@ ul {
 INDEX
 /////////////////////////////////////////////////////////////////////////////////// */
 
+/* sets width of container to 100% */
 .container {
     width: 100%;
 }
 
+/* centers how am i feeling section */
+.feeling {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    font-size: 2rem;
+}
+
+/* sets width of container index wrapper to 99% */
 .indexwrapper {
     width: 99%;
 }
 
-
-.fotw {
-    padding: 20px;
-}
-
-.carousel-label {
-    font-family: 'Rozha One', serif;
-    color: #344739;
-    font-size: 4rem;
-}
-
-.info1 {
-    width: 95%;
-    margin: auto;
-    background-color: #DFC3A7;
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    padding-top: 40px;
-    margin-top: 20px;
-    padding-bottom: 40px;
-}
-
-.info2 {
-    display: flex;
-    margin: auto;
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-    width: 95%;
-    background-color: #DFC3A7;
-    padding-top: 40px;
-    margin-top: 20px;
-    padding-bottom: 40px;
-}
-
-.overlay {
+/* sets section of moods to flex, adjusts spacing of content, sets background colour */
+.mood {
     display: flex;
     justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 0;
-    left: 0;
+    flex-direction: column;
+    background-color: #D1DCDA;
     width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-    color: white;
-    opacity: 0;
-    transition: opacity 0.25s;
-
 }
 
+/* sets flex position to relative, centers it, and makes width 95% with margin on the bottom of 40px */
+.flex {
+    position: relative;
+    width: 95%;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+/* adds margin of 40px to the first child of flex */
+.flex:nth-child(1) {
+    margin-top: 40px;
+}
+
+/* sets width of images with the class of carousel to 95% */
+.carousel {
+    width: 100%;
+    max-width: 640px;
+    margin: auto;
+    border-radius: 50%;
+    display: block;
+}
+
+/* adds overlay to carousel images, centers them, adds width and height, colour, opacity, makes them circular, and sets up for transition */
 .overlaycircle {
     display: flex;
     justify-content: center;
@@ -329,21 +318,12 @@ INDEX
 
 }
 
+/* sets opacity back to normal when carousel images are hoverd */
 .overlaycircle:hover {
     opacity: 1;
 }
 
-.flex {
-    position: relative;
-    width: 95%;
-    margin: auto;
-    margin-bottom: 40px;
-}
-
-.flex:nth-child(1) {
-    margin-top: 40px;
-}
-
+/* formats text that appears in overlay with font, fontsize, line height and alignment */
 .overlaytext {
     display: flex;
     flex-direction: column;
@@ -354,31 +334,72 @@ INDEX
     font-family: 'Rozha One', serif;
 }
 
-
-.ab {
-    text-transform: uppercase;
-    font-size: 5rem;
+/* formats text that appears in overlay eith font, size, and colour */
+.carousel-label {
+    font-family: 'Rozha One', serif;
+    color: #344739;
+    font-size: 4rem;
 }
 
-.rm {
-    padding-top: 25px;
-    text-transform: lowercase;
-}
-
-.overlay:hover {
-    opacity: 1;
-}
-
+/* sets class of woman to relative position and makes width 100% */
 .woman {
     position: relative;
     width: 100%;
 }
 
+/* sets image of baker to block display with width of 100% */
 .baker {
     display: block;
     width: 100%;
 }
 
+/* sets alignment to center, makes background colour black with opacity of 0.6 and sets up transition for opacity */
+.overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+/* sets overlay opacity back to normal when hovered */
+.overlay:hover {
+    opacity: 1;
+}
+
+/* sets about us text in overlay to uppercase and increases font size to 5rem */
+.ab {
+    text-transform: uppercase;
+    font-size: 5rem;
+}
+
+/* sets read more text to lowercase with padding of 25px on top */
+.rm {
+    padding-top: 25px;
+    text-transform: lowercase;
+}
+
+/* sets width to info1 container of 95% and centers it, makes it flex in column reverse, adjusts spacing and adds background colour */
+.info1 {
+    width: 95%;
+    margin: auto;
+    background-color: #DFC3A7;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding-top: 40px;
+    margin-top: 20px;
+    padding-bottom: 40px;
+}
+
+/* sets fit container to display of flex with width of 85%, spacing, centers it, and sets background colour to white */
 .fit {
     display: flex;
     width: 85%;
@@ -386,45 +407,38 @@ INDEX
     margin: 20px auto;
     background-color: white;
 }
-/* sets width of images with the class of carousel to 95% */
-.carousel {
-    width: 100%;
-    max-width: 640px;
-    margin: auto;
-    border-radius: 50%;
-    display: block;
-}
 
+/* sets width of coffee croissant 85% */
 .coffee-croissant {
     width: 85%;
 }
 
-.waffle-cupcake {
-    width: 85%;
+/* sets width to info2 container of 95% and centers it, makes it flex in column reverse, adjusts spacing and adds background colour */
+.info2 {
+    display: flex;
+    margin: auto;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    background-color: #DFC3A7;
+    padding-top: 40px;
+    margin-top: 20px;
+    padding-bottom: 40px;
 }
 
+/* centers and sets container of wcd to display flex */
 .wcd {
     display: flex;
     justify-content: center;
 }
 
-/* centers how am i feeling section */
-.feeling {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    font-size: 2rem;
+/* sets width of waffle cupcake */
+.waffle-cupcake {
+    width: 85%;
 }
 
-/* sets section of moods to flex, adjusts spacing of content, sets background colour */
-.mood {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    background-color: #D1DCDA;
-    width: 100%;
-}
-
+/* sets flavours display to flex, centers content, sets font size to 2rem and adds 10px of padding */
 .flavours {
     display: flex;
     justify-content: center;
@@ -432,11 +446,12 @@ INDEX
     padding: 10px;
 }
 
-.circle {
-    border-radius: 50%;
-    width: 85%;
+/* adds padding of 20px to flavour of the week heading */
+.fotw {
+    padding: 20px;
 }
 
+/* sets flavour labels to display of flex with column layout, and centers content */
 .flavourlabel {
     display: flex;
     flex-direction: column;
@@ -444,6 +459,13 @@ INDEX
     justify-content: center;
 }
 
+/* sets width of circle images to 85% and makes border radius into circles */
+.circle {
+    border-radius: 50%;
+    width: 85%;
+}
+
+/* makes font size of labels to 2rem, sets font and adds padding of 10px */
 .label {
     font-size: 2rem;
     padding: 10px;
@@ -452,148 +474,58 @@ INDEX
 
 /* MEDIUM VIEWPORT*/
 @media screen and (min-width: 641px) and (max-width: 1007px) {
-    .mood {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    .flavours {
-        display: flex;
-        justify-content: center;
-        font-size: 2rem;
-        padding: 10px;
-    }
-    
-    .flavourpics {
-        display: flex;
-        flex-direction: row;
-        background-color: #AD8C6F;
-    }
-
-    .circle {
-        border-radius: 50%;
-        width: 75%;
-        transition: transform 1s;
-    }
-
-    .circle:hover {
-        transform: scale(1.25);
-    }
-    
-    .flavourlabel {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-
-    }
-    
-    .label {
-        font-size: 1.5rem;
-        padding: 10px;
-    }
+    /* sets container of information to flex displaying in column format, centered, with a width of 95% */
     .information {
         display: flex;
         width: 95%;
         flex-direction: column;
         align-items: center;
     }
-
+    /* sets grandchild to display of flex */
     .grandchild {
         display: flex;
     }
-
+    /* sets flavours to centered display of flex, font size 2rem, and padding of 10px */
+    .flavours {
+        display: flex;
+        justify-content: center;
+        font-size: 2rem;
+        padding: 10px;
+    }
+    /* sets flex display to row and adds background colour */
+    .flavourpics {
+        display: flex;
+        flex-direction: row;
+        background-color: #AD8C6F;
+    }
+    /* sets flavour display to flex column, and centers content */
+    .flavourlabel {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    /* sets width of circle images to 75% while making border radius circular, sets up transition */
+    .circle {
+        border-radius: 50%;
+        width: 75%;
+        transition: transform 1s;
+    }
+    /* scales circle images up 1.25 when hovered */
+    .circle:hover {
+        transform: scale(1.25);
+    }
+    /* sets font size of label to 1.5rem with 10px of padding */
+    .label {
+        font-size: 1.5rem;
+        padding: 10px;
+    }
 }
 
 /* LARGE VIEWPORT */
 @media screen and (min-width: 1008px) {
-    .baker {
-        width: 100%;
-    }
-
-    .flavours {
-        display: flex;
-        justify-content: center;
-        font-size: 2rem;
-        padding: 10px;
-    }
-    
-    .flavourpics {
-        display: flex;
-        flex-direction: row;
-        background-color: #AD8C6F;
-        padding: 40px;
-    }
-
-    .circle {
-        border-radius: 50%;
-        width: 75%;
-        transition: transform 1s;
-    }
-
-    .circle:hover {
-        transform: scale(1.25);
-    }
-    
-    .flavourlabel {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .label {
-        font-size: 1.5rem;
-        padding: 10px;
-    }
-    .information {
-        margin: auto;
-        display: flex;
-        flex-direction: row;
-        width: 95%;
-    }
-
-    .coffee-croissant {
-        width: 50%;
-    }
-
-    .waffle-cupcake {
-        width: 50%;
-    }
-
-    .grandchild {
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-
-    }
-
-    .fit {
-        width: 50%;
-    }
-
-    .woman {
-        width: 50%;
-    }
-
-  .info1 {
-    display: flex;
-    flex-direction: row;
-    background-color: white;
-    padding: 0;
-    margin: 0;
-  }
-
-  .info2 {
-    display: flex;
-    flex-direction: row-reverse;
-    background-color: white;
-    padding: 0;
-    margin: 0;
-  }
     /* sets section of moods to flex, adjusts spacing of content, sets background colour */
-.mood {
+    .mood {
     display: flex;
     flex-direction: row;
     padding: 10px;
@@ -602,9 +534,97 @@ INDEX
     padding-top: 40px;
     padding-bottom: 40px;
     margin-bottom: 30px;
-}
+    }
+    /* sets carousel image width to 100% */
+    .carousel {
+        width: 100%;
+    }
+    /* centers information container, displays it in row format with width of 95% */
+    .information {
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        width: 95%;
+    }
+    /* sets width of woman to 50% */
+    .woman {
+        width: 50%;
+    }
+    /* sets width of baker image to 100% */
+    .baker {
+        width: 100%;
+    }
+    /* sets flex display to column and makes width 50% */
+    .grandchild {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+    /* sets display to row, adds background colour of white and removes previously added spacing */
+    .info1 {
+        display: flex;
+        flex-direction: row;
+        background-color: white;
+        padding: 0;
+        margin: 0;
+    }
+      /* sets fit container's width to 50% */
+      .fit {
+        width: 50%;
+    }
+    /* sets coffee croissant image width to 50% */
+    .coffee-croissant {
+        width: 50%;
+    }
+    /* sets flex display to row reverse with white background colour and removes previously added spacing */
+    .info2 {
+        display: flex;
+        flex-direction: row-reverse;
+        background-color: white;
+        padding: 0;
+        margin: 0;
+    }
+    /* sets width of waffle cupcake image to 50% */
+    .waffle-cupcake {
+        width: 50%;
+    }
+    /* centers flex content and makes font size 2rem with padding of 10px */
+    .flavours {
+        display: flex;
+        justify-content: center;
+        font-size: 2rem;
+        padding: 10px;
+    }
+    /* sets flex display to row, adds padding and background colour and spacing */
+    .flavourpics {
+        display: flex;
+        flex-direction: row;
+        background-color: #AD8C6F;
+        padding: 40px;
+    }
+    /* centers flex display */
+    .flavourlabel {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    /* sets circle width to 75%, makes border radius circular and sets up transition */
+    .circle {
+        border-radius: 50%;
+        width: 75%;
+        transition: transform 1s;
+    }
+    /* sets circle to scale up by 1.25 */
+    .circle:hover {
+        transform: scale(1.25);
+    }
+    /* makes font size 1.5rem and adds padding of 10px */
+    .label {
+        font-size: 1.5rem;
+        padding: 10px;
+    }
 } 
-
 
 /* //////////////////////////////////////////////////////////////////////////////////
 PRODUCTS
@@ -692,12 +712,14 @@ PRODUCTS
         justify-content: center;
         align-items: center;
         width: 100%;
-        background-color: #DFC3A7;
-        margin: 30px;
     }
     .fruit {
         padding: 20px;
         font-size: 3rem;
+        background-color: #DFC3A7;
+        margin: auto;
+        width: 85%;
+        border-radius: 10px;
     }
 
     /* .mood {
@@ -738,7 +760,7 @@ ABOUT
 }
 
 .card {
-    background-color: #AD8C6F;
+    background-color: #DFC3A7;
     margin: 10px auto;
     width: 95%;
 }
@@ -785,6 +807,12 @@ ul {
     align-items: center;
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+.name {
+    font-size: 2rem;
+    font-family: 'Rozha One', serif;
+    padding-bottom: 10px;
 }
 
 @media screen and (max-width: 640px) {
