@@ -472,8 +472,8 @@ INDEX
     font-family: 'Rozha One', serif;
 }
 
-/* MEDIUM VIEWPORT*/
-@media screen and (min-width: 641px) and (max-width: 1007px) {
+/* MEDIUM VIEWPORT 641px and beyond */
+@media screen and (min-width: 641px) {
     /* sets container of information to flex displaying in column format, centered, with a width of 95% */
     .information {
         display: flex;
@@ -630,6 +630,12 @@ INDEX
 PRODUCTS
 /////////////////////////////////////////////////////////////////////////////////// */
 
+/* sets width of wrapper to 95% and centers it */
+.wrapper {
+    width: 95%;
+    margin: auto;
+}
+/* adds background colour, centered flex display, font size, and spacing */
 .section {
     font-size: 2rem;
     display: flex;
@@ -639,23 +645,18 @@ PRODUCTS
     margin-top: 10px;
     margin-bottom: 10px;
 }
-
-.wrapper {
-    width: 95%;
-    margin: auto;
-}
-
-.products {
-    width: 100%;
-}
-
+/* sets centered flex display and font size to 1.25rem with 10px of padding */
 .title {
     display: flex;
     justify-content: center;
     padding: 10px;
     font-size: 1.25rem;
 }
-
+/* sets width of product images to 100% */
+.products {
+    width: 100%;
+}
+/* sets flex display of pies to row while evenly spaced with a font size of 1.25rem and 10px of padding*/
 .pies {
     display: flex;
     flex-direction: row;
@@ -663,14 +664,14 @@ PRODUCTS
     font-size: 1.25rem;
     padding: 10px;
 }
-
+/* formats container for button as display flex that's centered */
 .center {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: auto;
 }
-
+/* formates button with colour, text transform, font size, and spacing */
 .on {
     width: 60%;
     background-color: #DFC3A7;
@@ -683,11 +684,9 @@ PRODUCTS
     font-size: 1.25rem;
 }
 
-/* MEDIUM VIEWPORT*/
-@media screen and (min-width: 641px) and (max-width: 1007px) {
-    .mood {
-        display: flex;
-    }
+/* MEDIUM VIEWPORT of 641px and beyond*/
+@media screen and (min-width: 641px) {
+    /* sets cookies display to flex */
     .cookies {
         display: flex;
     }
@@ -695,17 +694,13 @@ PRODUCTS
 
 /* LARGE VIEWPORT */
 @media screen and (min-width: 1008px) {
-    .mood {
-        display: flex;
-    }
-    .cookies {
-        display: flex;
-    }
+    /* sets piesflex display to flex with direction of row and width of 100% */
     .piesflex {
         display: flex;
         flex-direction: row;
         width: 100%;
     }
+    /* sets pies flex display to centered column */
     .pies {
         display: flex;
         flex-direction: column;
@@ -713,6 +708,7 @@ PRODUCTS
         align-items: center;
         width: 100%;
     }
+    /* adds spacing, background colour, width, and border radius to class of fruit */
     .fruit {
         padding: 20px;
         font-size: 3rem;
@@ -721,31 +717,29 @@ PRODUCTS
         width: 85%;
         border-radius: 10px;
     }
-
-    /* .mood {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-    .carousel {
-        width: 100%;
-    }
-    .flex {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .carousel-label {
-        padding: 10px;
-    } */
 }
 
 /* //////////////////////////////////////////////////////////////////////////////////
 ABOUT
 /////////////////////////////////////////////////////////////////////////////////// */
 
+/* sets wrapper width to 95% and centers it */
+.aboutwrapper {
+    width: 95%;
+    margin: auto;
+}
+/* adds background colour, margin of 10px and padding of 20px to bottom */
+.blue {
+    background-color: #CEDDDA;
+    margin: 10px;
+    padding-bottom: 20px;
+}
+/* adds line height to about paragraphs of 20px and adds padding */
+p {
+    line-height: 20px;
+    padding: 10px;
+}
+/* formats button with colours, border, text transform, flex display, and padding */
 .shop {
     background-color: #DFC3A7;
     color: white;
@@ -758,36 +752,20 @@ ABOUT
     align-items: center;
     margin: auto;
 }
-
-.card {
-    background-color: #DFC3A7;
-    margin: 10px auto;
-    width: 95%;
-}
-
-.aboutwrapper {
-    width: 95%;
-    margin: auto;
-}
-
+/* formats h2 with padding, font size, and centered flex display */
 h2 {
     font-size: 2rem;
     display: flex;
     justify-content: center;
     padding: 10px;
 }
-
-.blue {
-    background-color: #CEDDDA;
-    margin: 10px;
-    padding-bottom: 20px;
+/* adds background colour, spacing, and width to cards */
+.card {
+    background-color: #DFC3A7;
+    margin: 10px auto;
+    width: 95%;
 }
-
-p {
-    line-height: 20px;
-    padding: 10px;
-}
-
+/* sets centered display of flex with spacing and width of 85% to photos with class of small */
 .small {
     display: flex;
     justify-content: center;
@@ -795,11 +773,11 @@ p {
     width: 85%;
     padding-top: 30px;
 }
-
+/* sets unordered list width to 100% */
 ul {
     width: 100%;
 }
-
+/* formats team with centered flex display, and 20px of padding to top and bottom */
 .team {
     display: flex;
     flex-direction: column;
@@ -808,40 +786,23 @@ ul {
     padding-top: 20px;
     padding-bottom: 20px;
 }
-
+/* increases name font size to 2rem, changes font to Rozha one and adds 10px of padding to bottom */
 .name {
     font-size: 2rem;
     font-family: 'Rozha One', serif;
     padding-bottom: 10px;
 }
 
-@media screen and (max-width: 640px) {
-
-.about {
-    line-height: 20px;
-}
-}
-/* MEDIUM VIEWPORT*/
-@media screen and (min-width: 641px) and (max-width: 1007px) {
-  .gettoknow {
-    display: flex;
-    flex-direction: row;
-  }
-  .card {
-    margin: 10px;
-  }
-}
-
-
-
-/* LARGE VIEWPORT */
-@media screen and (min-width: 1008px) {
+/* MEDIUM VIEWPORT for 641px and beyond */
+@media screen and (min-width: 641px) {
+    /* changes get to know flex direction to row */
     .gettoknow {
-    display: flex;
-    flex-direction: row;
+        display: flex;
+        flex-direction: row;
     }
+    /* sets card margin to 10px */
     .card {
-    margin: 10px;
+        margin: 10px;
     }
 }
 
