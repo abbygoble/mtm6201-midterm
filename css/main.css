@@ -398,7 +398,7 @@ INDEX
 /* sets width to info1 container of 95% and centers it, makes it flex in column reverse, adjusts spacing, background colour and prevents flex wrap*/
 .info1 {
     width: 100%;
-    margin: auto;
+    /* margin: auto; */
     background-color: #DFC3A7;
     align-items: center;
     padding-top: 40px;
@@ -432,7 +432,6 @@ INDEX
 }
 
 .fit-2 {
-
     line-height: 20px;
     background-color: white;
     height: 125px;
@@ -563,6 +562,9 @@ INDEX
     /* sets carousel image width to 100% */
     .carousel {
         width: 100%;
+    }
+    .carousel-label {
+        font-size: 2rem;
     }
     .flex {
         margin-bottom: 0;
