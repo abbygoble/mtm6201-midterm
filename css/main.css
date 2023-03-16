@@ -380,6 +380,11 @@ INDEX
     opacity: 1;
 }
 
+.information {
+    display: flex;
+    flex-direction: column;
+}
+
 /* sets about us text in overlay to uppercase and increases font size to 5rem */
 .ab {
     text-transform: uppercase;
@@ -397,7 +402,6 @@ INDEX
 
 /* sets width to info1 container of 95% and centers it, makes it flex in column reverse, adjusts spacing, background colour and prevents flex wrap*/
 .info1 {
-    width: 100%;
     /* margin: auto; */
     background-color: #DFC3A7;
     align-items: center;
@@ -410,8 +414,8 @@ INDEX
 .abby {
     width: 100%;
     margin: auto;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .abby-2 {
@@ -499,6 +503,10 @@ INDEX
 
 /* MEDIUM VIEWPORT 641px and beyond */
 @media screen and (min-width: 641px) {
+    .mood {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
     /* sets container of information to flex displaying in column format, centered, with a width of 95% */
     .information {
         display: flex;
@@ -574,13 +582,11 @@ INDEX
     .information {
         display: flex;
         flex-direction: row;
-        background-color: pink;
     }
 
     .grandchild {
         display: flex;
         flex-direction: column;
-        background-color: aqua;
     }
 
     .info1 {
@@ -588,29 +594,14 @@ INDEX
         padding-top: 0;
         padding-bottom: 0;
         height: fit-content;
-        background-color: blueviolet;
     }
 
     .abby {
-        background-color: brown;
         align-items: center;
     }
 
     .abby-2 {
-        background-color: darkorange;
         align-items: center;
-    }
-
-    .fit {
-        background-color: chartreuse;
-    }
-
-    .fit-2 {
-        background-color: darkolivegreen;
-    }
-
-    .wcd {
-        background-color: azure;
     }
     /* centers flex content and makes font size 2rem with padding of 10px */
     .flavours {
@@ -647,6 +638,7 @@ INDEX
     .label {
         font-size: 1.5rem;
         padding: 10px;
+        margin-top: 40px;
     }
 } 
 
@@ -862,25 +854,22 @@ input {
     text-transform: uppercase;
     padding: 15px;
     border-radius: 10px;
-    margin: 10px;
+    margin: 10px auto;
     font-size: 1.25rem;
 }
 
 .submit:active {
-    animation-name: jumpandback;
-    animation-duration: 2s;
+    -webkit-animation: colourChange 1s infinite;
+
+    /* animation-name: jumpandback;
+    animation-duration: 500ms; */
 }
 
-@keyframes jumpandback {
-    10%,
-    25% {
-        transform: scale(1.5, 0.7); 
+@keyframes colourChange {
+    from {
+        background-color: #344739;;
     }
-    50% {
-        transform: scale(0.5, 2);
+    to {
+        background-color: #CEDDDA;
     }
-    60% {transform: scale(1,1);}
-    75% {
-        transform: scale(1.5,0.7);
-    }
-}
+} 
