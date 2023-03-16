@@ -341,6 +341,12 @@ INDEX
     font-size: 4rem;
 }
 
+/* centers information content */
+.information {
+    margin: auto;
+    margin-top: 20px;
+}
+
 /* sets class of woman to relative position and makes width 100% */
 .woman {
     position: relative;
@@ -385,47 +391,66 @@ INDEX
     padding-top: 25px;
     text-transform: lowercase;
 }
-
-/* sets width to info1 container of 95% and centers it, makes it flex in column reverse, adjusts spacing and adds background colour */
-.info1 {
-    width: 95%;
-    margin: auto;
-    background-color: #DFC3A7;
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    padding-top: 40px;
-    margin-top: 20px;
-    padding-bottom: 40px;
+.grandchild {
+    width: 100%;
 }
 
-/* sets fit container to display of flex with width of 85%, spacing, centers it, and sets background colour to white */
+/* sets width to info1 container of 95% and centers it, makes it flex in column reverse, adjusts spacing, background colour and prevents flex wrap*/
+.info1 {
+    width: 100%;
+    margin: auto;
+    background-color: #DFC3A7;
+    align-items: center;
+    padding-top: 40px;
+    /* margin-top: 20px; */
+    padding-bottom: 10px;
+    flex-wrap: nowrap;
+}
+
+.abby {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.abby-2 {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* sets fit container to display of flex with width of 85%, spacing, centers it, adds height, and sets background colour to white */
 .fit {
     display: flex;
-    width: 85%;
     line-height: 20px;
-    margin: 20px auto;
     background-color: white;
+    height: 125px;
+    align-items: center;
+    justify-content: center;
+}
+
+.fit-2 {
+
+    line-height: 20px;
+    background-color: white;
+    height: 125px;
+    align-items: center;
+    justify-content: center;
 }
 
 /* sets width of coffee croissant 85% */
 .coffee-croissant {
-    width: 85%;
+    width: 100%;
+    margin: auto;
 }
 
 /* sets width to info2 container of 95% and centers it, makes it flex in column reverse, adjusts spacing and adds background colour */
-.info2 {
-    display: flex;
-    margin: auto;
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-    width: 95%;
-    background-color: #DFC3A7;
-    padding-top: 40px;
+/* .info1:nth-child(2) {
     margin-top: 20px;
-    padding-bottom: 40px;
-}
+    margin-left: 10px;
+} */
 
 /* centers and sets container of wcd to display flex */
 .wcd {
@@ -435,7 +460,8 @@ INDEX
 
 /* sets width of waffle cupcake */
 .waffle-cupcake {
-    width: 85%;
+    width: 100%;
+    margin: auto;
 }
 
 /* sets flavours display to flex, centers content, sets font size to 2rem and adds 10px of padding */
@@ -477,9 +503,8 @@ INDEX
     /* sets container of information to flex displaying in column format, centered, with a width of 95% */
     .information {
         display: flex;
-        width: 95%;
+        width: 100%;
         flex-direction: column;
-        align-items: center;
     }
     /* sets grandchild to display of flex */
     .grandchild {
@@ -539,54 +564,51 @@ INDEX
     .carousel {
         width: 100%;
     }
-    /* centers information container, displays it in row format with width of 95% */
+    .flex {
+        margin-bottom: 0;
+
+    }
+    /* sets information container to flex display row */
     .information {
-        margin: auto;
         display: flex;
         flex-direction: row;
-        width: 95%;
+        background-color: pink;
     }
-    /* sets width of woman to 50% */
-    .woman {
-        width: 50%;
-    }
-    /* sets width of baker image to 100% */
-    .baker {
-        width: 100%;
-    }
-    /* sets flex display to column and makes width 50% */
+
     .grandchild {
-        width: 50%;
         display: flex;
         flex-direction: column;
+        background-color: aqua;
     }
-    /* sets display to row, adds background colour of white and removes previously added spacing */
+
     .info1 {
-        display: flex;
-        flex-direction: row;
         background-color: white;
-        padding: 0;
-        margin: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        height: fit-content;
+        background-color: blueviolet;
     }
-      /* sets fit container's width to 50% */
-      .fit {
-        width: 50%;
+
+    .abby {
+        background-color: brown;
+        align-items: center;
     }
-    /* sets coffee croissant image width to 50% */
-    .coffee-croissant {
-        width: 50%;
+
+    .abby-2 {
+        background-color: darkorange;
+        align-items: center;
     }
-    /* sets flex display to row reverse with white background colour and removes previously added spacing */
-    .info2 {
-        display: flex;
-        flex-direction: row-reverse;
-        background-color: white;
-        padding: 0;
-        margin: 0;
+
+    .fit {
+        background-color: chartreuse;
     }
-    /* sets width of waffle cupcake image to 50% */
-    .waffle-cupcake {
-        width: 50%;
+
+    .fit-2 {
+        background-color: darkolivegreen;
+    }
+
+    .wcd {
+        background-color: azure;
     }
     /* centers flex content and makes font size 2rem with padding of 10px */
     .flavours {
@@ -840,4 +862,23 @@ input {
     border-radius: 10px;
     margin: 10px;
     font-size: 1.25rem;
+}
+
+.submit:active {
+    animation-name: jumpandback;
+    animation-duration: 2s;
+}
+
+@keyframes jumpandback {
+    10%,
+    25% {
+        transform: scale(1.5, 0.7); 
+    }
+    50% {
+        transform: scale(0.5, 2);
+    }
+    60% {transform: scale(1,1);}
+    75% {
+        transform: scale(1.5,0.7);
+    }
 }
